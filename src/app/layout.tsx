@@ -1,6 +1,5 @@
 import styles from "./page.module.css";
-import localFont from "next/font/local";
-import Sidebar from "@/app/components/layout/sidebar";
+import localFont from "next/font/local"; import Sidebar from "@/app/components/layout/sidebar";
 import Navbar from "@/app/components/layout/navbar";
 import "./globals.css";
 

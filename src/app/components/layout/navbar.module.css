@@ -8,7 +8,8 @@
   background: linear-gradient(rgba(43, 43, 43, 0.9), rgba(43, 43, 43, 0.9)),
     url('/Texture.png');
   background-size: auto;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 999;
   flex-shrink: 0;
   overflow: hidden;
@@ -37,14 +38,13 @@
   font-weight: 500;
   position: relative;
   padding: 5px 10px;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease;
   white-space: nowrap;
 }
 
 .navList li.active a {
   color: #ffffff;
   font-weight: 600;
-  animation: textGlow 0.8s ease-out;
 }
 
 .navList a:hover {
@@ -54,17 +54,10 @@
 @keyframes textGlow {
   0% {
     color: #8B8B8B;
-    text-shadow: 0 0 0px rgba(255, 107, 107, 0);
-  }
-
-  50% {
-    color: #8b8b9b;
-    text-shadow: 0 0 10px rgba(255, 107, 107, 0.8);
   }
 
   100% {
     color: #ffffff;
-    text-shadow: 0 0 0px rgba(255, 107, 107, 0);
   }
 }
 
